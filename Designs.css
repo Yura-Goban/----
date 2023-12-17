@@ -1,0 +1,110 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background:#2c0000;
+}
+
+.inkCraft {  
+    position: relative; 
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.inkCraft img {
+    position: absolute;
+    z-index: 1; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inkCraft .fon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:  #322A2AE5;
+    z-index: 2; 
+}
+
+.inkCraft h1 {
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 212px;
+    letter-spacing: 0.385em;
+    font-family: 'Viaoda Libre', serif;
+    position: absolute;
+    z-index: 3;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.stile-img p{
+    text-transform: uppercase;
+    margin-top: 165px;
+    margin-bottom: 88px;
+    font-family: Verdana;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+.stile-img {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+}
+
+.stile-img .foto {
+    margin-bottom: 115px;
+}
+.stile-img p.new-name {
+    display: none;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .inkCraft h1 {
+        font-size: 115px;  
+    } 
+    .stile-img {
+        grid-template-columns: 50% 50%;
+    }
+    .none2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .inkCraft h1 {
+        font-size: 80px;
+        line-height: 112px;
+    }
+    
+    .stile-img {
+        grid-template-columns: 100%;
+    }
+    
+    .stile-img p {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .none {
+        display: none;
+    }
+    .stile-img p.new-name {
+        display: block;
+    }
+    
+}
+@media only screen and (max-width: 768px){
+    .inkCraft h1 {
+        font-size: 40px;  
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Designs.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+    <title>Ваш сайт</title>
+</head>
+<body class="body">
+    <header>
+        <div class="logo">InkCraft</div>
+        <nav class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Designs.html">Designs</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </nav>
+      </header>
+
+    <div class="diamond-container">
+        <img src="jake-davies-ytxcmBoVkh0-unsplash-removebg-preview 1.png" alt="Картинка в формі ромба">
+    </div>
+
+    <div class="text-container">
+        <div class="title-text">
+            <p class="title">Tattoo Studio</p>
+        </div>
+        <div class="description-text">
+            <p class="description">Our tattoo studio is a great place to get a tattoo. We have a team of experienced artists who can create any design you want.</p>
+        </div>
+        <div class="buttons-container">
+            <button class="custom-button">Book Now!</button>
+        </div>
+    </div>
+
+    <div class="gray-image">
+        <div class="text-container">
+            <div class="title-texts">
+                <p class="titles">Various Styles</p>
+            </div>
+            <div class="description-texts">
+                <p class="descriptions">We offer a variety of styles of tattoos, including traditional, black and grey, realism, and Japanese. We also offer custom designs, so you can get the perfect tattoo for you.</p>
+            </div>
+            <div class="buttons-containers">
+                <button class="custom-buttons">Design</button>
+            </div>
+        </div>
+        <div class="Geners-img">
+            <img class="Geners-img" src="Geners.png" alt="">
+        </div>
+    </div>
+
+    <div class="tattoo-culture-container">
+        <div class="tattoo-culture-title">
+            <p class="tattoo-culture-title-text">Tattoo Culture</p>
+        </div>
+
+        <div class="tattoo-culture-description">
+            <p class="tattoo-culture-description-text">complex and multifaceted phenomenon that has been around for centuries. It has been used for a variety of purposes, including self-expression, religious or spiritual beliefs, and social status.</p>
+        </div>
+
+        <div class="tattoo-culture-image">
+            <img class="round-image" src="pexels-eduardo-ordone-2928342 1.png" alt="Your Image">
+        </div>
+
+        <div class="video-container">
+            <video width="300" height="560" controls>
+                <source src="tatoo.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+
+</body>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p class="modal-text">Welcome to our Tattoo Studio! Book your appointment now!</p>
+      <button class="custom-button">Book Now!</button>
+    </div>
+  </div>
+</html>
+
+<script>
+    // Отримуємо модальне вікно та кнопку для закриття
+    var modal = document.getElementById('myModal');
+    var closeButton = document.getElementsByClassName('close')[0];
+    
+    // При кліку на кнопку відображення модального вікна
+    document.addEventListener('DOMContentLoaded', function () {
+      modal.style.display = 'block';
+    });
+    
+    // При кліку на хрестик закриваємо модальне вікно
+    closeButton.onclick = function() {
+      modal.style.display = 'none';
+    };
+    
+    // Закрийте модальне вікно, якщо користувач клікне поза ним
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    };
+    </script>
+    
