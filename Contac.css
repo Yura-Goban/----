@@ -150,6 +150,14 @@ color: #000;
 }
 
 @media only screen and (max-width: 768px) {
+  .tatu{
+    color: #333;
+    }
+    
+    .kupon{
+    color: #000;
+    }
+    
     header {
       padding: 10px;
       flex-direction: column;
